@@ -1,0 +1,195 @@
+/*
+ Theme Name:   Divi Child
+ Description:  Thème enfant pour le thème Divi.
+ Author:       Vincent
+ Author URI:   http://exemple.com
+ Template:     Divi
+ Version:      1.0.0
+*/
+
+:root {
+    --bg-primary-color: #ede2da;
+    --bg-secondary-color: #fff;
+    --color-btn: #DC9F96;
+    --color-btn-hover: #C02E44;
+    --color-heading: #3B8E46;
+    --color-heading2: #D2776A;
+    --color-base: #000;
+    --font-color-btn-: #fff;
+
+    --font-size-nav: 16px;
+    --font-size-base: 20px;
+    --font-size-heading: 38px;
+    --font-size-heading2: 30px;
+    --font-size-btn: 15px;
+
+    --font-weight-heading: 800;
+    --font-weight-heading2: 700;
+    --font-weight-btn: 700;
+    --font-weight-base: 400;
+    --font-weight-btn2: 400;
+
+    --margin-standard: 30px;
+    --padding-standard: 30px;
+}
+html {
+    display: flex;
+    justify-content: center;
+}
+body {
+    max-width: 1440px;
+    overflow-x: hidden;
+
+}
+
+
+/*  HEADER  */  /*  HEADER  */  /*  HEADER  */  /*  HEADER  */  
+
+.nav-principal {
+    width: 1204px; /* 1440-236 pour laisser monter le bouton sur la même ligne */
+    height: 80px;
+}
+
+.row-nav-btn {
+    display: flex;
+    flex-direction: row; /* pour que le bouton se mette à la suite et non à la ligne */
+}
+
+.btn-nav {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+
+    background-color: var(--color-btn);
+    color: #fff;
+    font-size: var(--font-size-btn);
+    font-weight: 700;
+    width: 236px;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+.btn-nav:hover{
+    background-color: var(--color-btn-hover)!important;
+}
+
+
+/* PAGE ACCUEIL *//* PAGE ACCUEIL *//* PAGE ACCUEIL *//* PAGE ACCUEIL */
+/*  CONTAINER  *//*  CONTAINER  *//*  CONTAINER  *//*  CONTAINER  */  
+
+.section1 {
+    background-color: var(--bg-primary-color);
+    padding: 30px 0 0 0;
+}
+.row-h1 {
+    max-width: 700px!important;
+}
+.h1-perso {
+    color: var(--color-heading);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-heading);
+}
+.branche-gauche {
+    width: 350px;
+    height: auto;
+    position: relative;
+    top: 80px;
+    left: 235px;
+    z-index: 1;
+}
+.boisson-img {
+    width: 350px;
+    height: auto;
+    z-index: 23;
+}
+.branche-droite {
+    width: 350px;
+    height: auto;
+    position: relative;
+    top: 80px;
+    left: -240px;
+    z-index: 1;
+}
+.section2 {
+    background-color: var(--bg-secondary-color);
+}
+.h2-special h2{
+    color: var(--color-heading);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading2);
+}
+.s2-paragraphe {
+    color: var(--color-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+}
+
+.section3-gouts {
+    background-color: var(--bg-primary-color);
+}
+.section3-gouts h2 {
+    color: var(--color-heading2);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading);
+}
+.section3-gouts p {
+    color: var(--color-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+}
+.img-fruits {
+    width: 393px;
+}
+.btn-commander {
+    margin:30px;
+    background-color: var(--color-btn);
+    color: var(--font-color-btn-);
+    font-size: var(--font-size-btn);
+    font-weight: var(--font-weight-btn2);
+    border:none;
+    border-radius: 5px;
+}
+.btn-commander:hover {
+    background-color: var(--color-btn-hover)!important;
+}
+.et_pb_button_0 {
+    padding: 100px!important;
+}
+
+.section4-temoignages h2 {
+    color: var(--color-heading);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading);
+}
+.row-boissons {
+    height: 131px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.colonne-boissons {
+    display:flex;
+}
+.boisson-bas {
+    position: relative;
+    top: 40px;
+}
+.boisson-moyen {
+    position:relative;
+    top: 20px
+}
+
+
+/*  FOOTER  *//*  FOOTER  *//*  FOOTER  *//*  FOOTER  */  
+
+/* .section-footer {
+    
+}
+.row-footer {
+    
+}
+.colonne-footer {
+
+}
+.module-footer {
+
+} */

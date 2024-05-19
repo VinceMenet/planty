@@ -38,4 +38,27 @@
 .is-style-default {
     max-width: 781px !important;
 }
-
+.block-branche-boisson {
+    width: auto;
+    background-color: #fff;
+    position:relative;
+}
+.branche-gauche {
+    position:relative;
+    right:0;
+    top:0;
+    width:349px;
+    height:400px;
+    z-index: 1;
+}
+.boisson-img {
+    z-index:2;
+}
+.branche-droite {
+    position:relative;
+    right:0;
+    top:0;
+    width:349px;
+    height:400px;
+    z-index: 1;
+}
