@@ -137,8 +137,48 @@ body {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-base);
 }
-.img-fruits {
-    width: 393px;
+.images-grille {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    gap:30px;
+}
+.image-container {
+    position: relative;
+    width: 393px!important;
+    height: 262px !important;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 48px!important;
+    font-weight: var(--font-weight-heading)!important;
+    line-height: 57.6px;
+    word-break:break-all;
+    box-sizing: border-box;
+}
+.pamplemousse-img {
+    padding: 12px;
+}
+.framboise-img {
+    padding: 50px;
 }
 .btn-commander {
     margin:30px;
@@ -146,7 +186,7 @@ body {
     color: var(--font-color-btn-);
     font-size: var(--font-size-btn);
     font-weight: var(--font-weight-btn2);
-    border:none;
+    border: none;
     border-radius: 5px;
 }
 .btn-commander:hover {
@@ -178,7 +218,74 @@ body {
     top: 20px
 }
 
+/* PAGE NOUS RENCONTRER */
 
+.section-contact1 {
+    background-color: var(--bg-primary-color);
+}
+.fleur-img {
+    width: 145px;
+    height: 150px;
+}
+.section-contact1 h1 {
+    color: var(--color-heading2);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-heading);
+    text-align: center;
+;
+}
+.branche-img {
+    width: 191px;
+    height: 219px;
+}
+.section-contact1 p {
+    color: var(--color-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+}
+
+.section-contact2 {
+    background-color: var(--bg-secondary-color);
+}
+.section-contact2 h2 {
+    color: var(--color-base);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-size-heading2);
+}
+.section-contact3 {
+    background-color: var(--bg-primary-color);
+}
+.section-contact3 .houx-img {
+    width: 147px;
+    height: 134px;
+}
+.section-contact3 h2 {
+    text-align: center;
+    color: var(--color-base);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading2);
+}
+.et_contact_bottom_container {
+width: 100%;
+display: flex;
+justify-content: center;
+padding-top: 24px;
+}
+.section-commander {
+    background-color: #3B8E46;
+}
+.section-commander h1 {
+    color: #fff;
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-heading);
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-commander h2 {
+    color: #fff;
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading2);
+}
 /*  FOOTER  *//*  FOOTER  *//*  FOOTER  *//*  FOOTER  */  
 
 /* .section-footer {
