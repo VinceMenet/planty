@@ -1,64 +1,306 @@
 /*
- Theme Name:   Twenty Twenty Four Child
- Description:  Un thème enfant pour le thème Twenty Twenty Four.
+ Theme Name:   Divi Child
+ Description:  Thème enfant pour le thème Divi.
  Author:       Vincent
  Author URI:   http://exemple.com
- Template:     twentytwentyfour
+ Template:     Divi
  Version:      1.0.0
 */
 
-/* header */
+:root {
+    --bg-primary-color: #ede2da;
+    --bg-secondary-color: #fff;
+    --color-btn: #DC9F96;
+    --color-btn-hover: #C02E44;
+    --color-heading: #3B8E46;
+    --color-heading2: #D2776A;
+    --color-base: #000;
+    --font-color-btn-: #fff;
 
-.wp-container-core-group-is-layout-5.wp-container-core-group-is-layout-5 > .alignwide {
-    height: 80px;
+    --font-size-nav: 16px;
+    --font-size-base: 20px;
+    --font-size-heading: 38px;
+    --font-size-heading2: 30px;
+    --font-size-btn: 15px;
+
+    --font-weight-heading: 800;
+    --font-weight-heading2: 700;
+    --font-weight-btn: 700;
+    --font-weight-base: 400;
+    --font-weight-btn2: 400;
+
+    --margin-standard: 30px;
+    --padding-standard: 30px;
 }
-.wp-block-buttons .is-layout-flex .wp-block-buttons-is-layout-flex {
-    width: 236px;
-}
-.wp-block-site-logo {
-    margin: 30px 37px !important;
-}
-.wp-block-group .is-nowrap .is-layout-flex .wp-container-core-group-is-layout-2 .wp-block-group-is-layout-flex {
-  width: 236px !important;
-}
-.wp-block-buttons>.wp-block-button.wp-block-button__width-100  {
-    display: flex;
-    justify-content: end;
-}
-.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link {
-    width: 236px;
-    height: 80px;
+html {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+body {
+    max-width: 1440px;
+    overflow-x: hidden;
+
 }
 
-/* Main */
 
-.is-style-default {
-    max-width: 781px !important;
+/*  HEADER  */  /*  HEADER  */  /*  HEADER  */  /*  HEADER  */  
+
+.nav-principal {
+    width: 1204px; /* 1440-236 pour laisser monter le bouton sur la même ligne */
+    height: 80px;
 }
-.block-branche-boisson {
-    width: auto;
-    background-color: #fff;
-    position:relative;
+
+.row-nav-btn {
+    display: flex;
+    flex-direction: row; /* pour que le bouton se mette à la suite et non à la ligne */
+}
+
+.btn-nav {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+
+    background-color: var(--color-btn);
+    color: #fff;
+    font-size: var(--font-size-btn);
+    font-weight: 700;
+    width: 236px;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+.btn-nav:hover{
+    background-color: var(--color-btn-hover)!important;
+}
+
+
+/* PAGE ACCUEIL *//* PAGE ACCUEIL *//* PAGE ACCUEIL *//* PAGE ACCUEIL */
+/*  CONTAINER  *//*  CONTAINER  *//*  CONTAINER  *//*  CONTAINER  */  
+
+.section1 {
+    background-color: var(--bg-primary-color);
+    padding: 30px 0 0 0;
+}
+.row-h1 {
+    max-width: 700px!important;
+}
+.h1-perso {
+    color: var(--color-heading);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-heading);
 }
 .branche-gauche {
-    position:relative;
-    right:0;
-    top:0;
-    width:349px;
-    height:400px;
+    width: 350px;
+    height: auto;
+    position: relative;
+    top: 80px;
+    left: 235px;
     z-index: 1;
 }
 .boisson-img {
-    z-index:2;
+    width: 350px;
+    height: auto;
+    z-index: 23;
 }
 .branche-droite {
-    position:relative;
-    right:0;
-    top:0;
-    width:349px;
-    height:400px;
+    width: 350px;
+    height: auto;
+    position: relative;
+    top: 80px;
+    left: -240px;
     z-index: 1;
 }
+.section2 {
+    background-color: var(--bg-secondary-color);
+}
+.h2-special h2{
+    color: var(--color-heading);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading2);
+}
+.s2-paragraphe {
+    color: var(--color-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+}
+
+.section3-gouts {
+    background-color: var(--bg-primary-color);
+}
+.section3-gouts h2 {
+    color: var(--color-heading2);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading);
+}
+.section3-gouts p {
+    color: var(--color-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+}
+.images-grille {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    gap:30px;
+}
+.image-container {
+    position: relative;
+    width: 393px!important;
+    height: 262px !important;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 48px!important;
+    font-weight: var(--font-weight-heading)!important;
+    line-height: 57.6px;
+    word-break:break-all;
+    box-sizing: border-box;
+}
+.pamplemousse-img {
+    padding: 12px;
+}
+.framboise-img {
+    padding: 50px;
+}
+.btn-commander {
+    margin:30px;
+    background-color: var(--color-btn);
+    color: var(--font-color-btn-);
+    font-size: var(--font-size-btn);
+    font-weight: var(--font-weight-btn2);
+    border: none;
+    border-radius: 5px;
+}
+.btn-commander:hover {
+    background-color: var(--color-btn-hover)!important;
+}
+.et_pb_button_0 {
+    padding: 100px!important;
+}
+
+.section4-temoignages h2 {
+    color: var(--color-heading);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading);
+}
+.row-boissons {
+    height: 131px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.colonne-boissons {
+    display:flex;
+}
+.boisson-bas {
+    position: relative;
+    top: 40px;
+}
+.boisson-moyen {
+    position:relative;
+    top: 20px
+}
+
+/* PAGE NOUS RENCONTRER */
+
+.section-contact1 {
+    background-color: var(--bg-primary-color);
+}
+.fleur-img {
+    width: 145px;
+    height: 150px;
+}
+.section-contact1 h1 {
+    color: var(--color-heading2);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-heading);
+    text-align: center;
+;
+}
+.branche-img {
+    width: 191px;
+    height: 219px;
+}
+.section-contact1 p {
+    color: var(--color-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+}
+
+.section-contact2 {
+    background-color: var(--bg-secondary-color);
+}
+.section-contact2 h2 {
+    color: var(--color-base);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-size-heading2);
+}
+.section-contact3 {
+    background-color: var(--bg-primary-color);
+}
+.section-contact3 .houx-img {
+    width: 147px;
+    height: 134px;
+}
+.section-contact3 h2 {
+    text-align: center;
+    color: var(--color-base);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading2);
+}
+.et_contact_bottom_container {
+width: 100%;
+display: flex;
+justify-content: center;
+padding-top: 24px;
+}
+.section-commander {
+    background-color: #3B8E46;
+}
+.section-commander h1 {
+    color: #fff;
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-heading);
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-commander h2 {
+    color: #fff;
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading2);
+}
+
+/* PAGE PRECOMMANDE *//* PAGE PRECOMMANDE *//* PAGE PRECOMMANDE *//* PAGE PRECOMMANDE */
+
+
+/*  FOOTER  *//*  FOOTER  *//*  FOOTER  *//*  FOOTER  */  
+
+/* .section-footer {
+    
+}
+.row-footer {
+    
+}
+.colonne-footer {
+
+}
+.module-footer {
+
+} */
