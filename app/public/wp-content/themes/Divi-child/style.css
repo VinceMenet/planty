@@ -32,10 +32,12 @@
     --margin-standard: 30px;
     --padding-standard: 30px;
 }
+
 html {
     display: flex;
     justify-content: center;
 }
+
 body {
     max-width: 1440px;
     overflow-x: hidden;
@@ -43,22 +45,24 @@ body {
 }
 
 
-/*  HEADER  */  /*  HEADER  */  /*  HEADER  */  /*  HEADER  */  
+/*  HEADER  */
 
 .nav-principal {
-    width: 1204px; /* 1440-236 pour laisser monter le bouton sur la même ligne */
+    width: 1204px;
+    /* 1440-236 pour laisser monter le bouton sur la même ligne */
     height: 80px;
 }
 
 .row-nav-btn {
     display: flex;
-    flex-direction: row; /* pour que le bouton se mette à la suite et non à la ligne */
+    flex-direction: row;
+    /* pour que le bouton se mette à la suite et non à la ligne */
 }
 
 .btn-nav {
-    display: flex!important;
-    justify-content: center!important;
-    align-items: center!important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 
     background-color: var(--color-btn);
     color: #fff;
@@ -69,55 +73,67 @@ body {
     border: none;
     border-radius: 0;
 }
-.btn-nav:hover{
-    background-color: var(--color-btn-hover)!important;
+
+.btn-nav:hover {
+    background-color: var(--color-btn-hover) !important;
 }
 
 
-/* PAGE ACCUEIL *//* PAGE ACCUEIL *//* PAGE ACCUEIL *//* PAGE ACCUEIL */
-/*  CONTAINER  *//*  CONTAINER  *//*  CONTAINER  *//*  CONTAINER  */  
+/* PAGE ACCUEIL */
+
+/*  CONTAINER  */
 
 .section1 {
     background-color: var(--bg-primary-color);
     padding: 30px 0 0 0;
 }
+
 .row-h1 {
-    max-width: 700px!important;
+    max-width: 700px !important;
 }
+
 .h1-perso {
     color: var(--color-heading);
     font-size: var(--font-size-heading);
     font-weight: var(--font-weight-heading);
 }
-.branche-gauche {
-    width: 350px;
-    height: auto;
+.row-branches-boisson {
+    width: 950px;
+}
+.colonne-branches-boisson {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
     position: relative;
-    top: 80px;
-    left: 235px;
-    z-index: 1;
+}
+.branche-gauche {
+    position: absolute !important;
+    top:140px !important;
+    left:120px !important;
 }
 .boisson-img {
-    width: 350px;
-    height: auto;
-    z-index: 23;
+    position: absolute !important;
+    top: 0 !important;
+    left:auto !important;
 }
 .branche-droite {
-    width: 350px;
-    height: auto;
-    position: relative;
-    top: 80px;
-    left: -240px;
-    z-index: 1;
+    position: absolute !important;
+    top: 140px !important;
+    left: 470px !important;
 }
+
 .section2 {
     background-color: var(--bg-secondary-color);
 }
-.h2-special h2{
+
+.h2-special h2 {
     color: var(--color-heading);
     font-size: var(--font-size-heading2);
     font-weight: var(--font-weight-heading2);
 }
+
 .s2-paragraphe {
     color: var(--color-base);
     font-size: var(--font-size-base);
@@ -127,25 +143,30 @@ body {
 .section3-gouts {
     background-color: var(--bg-primary-color);
 }
+
 .section3-gouts h2 {
     color: var(--color-heading2);
     font-size: var(--font-size-heading2);
     font-weight: var(--font-weight-heading);
 }
+
 .section3-gouts p {
     color: var(--color-base);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-base);
 }
+
 .images-grille {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 40px;
-    gap:30px;
+    gap: 30px;
 }
+
 .image-container {
     position: relative;
-    width: 393px!important;
+    width: 393px !important;
     height: 262px !important;
     overflow: hidden;
 }
@@ -168,20 +189,23 @@ body {
     justify-content: center;
     color: white;
     text-align: center;
-    font-size: 48px!important;
-    font-weight: var(--font-weight-heading)!important;
+    font-size: 48px !important;
+    font-weight: var(--font-weight-heading) !important;
     line-height: 57.6px;
-    word-break:break-all;
+    word-break: break-all;
     box-sizing: border-box;
 }
+
 .pamplemousse-img {
     padding: 12px;
 }
+
 .framboise-img {
     padding: 50px;
 }
+
 .btn-commander {
-    margin:30px;
+    margin: 30px;
     background-color: var(--color-btn);
     color: var(--font-color-btn-);
     font-size: var(--font-size-btn);
@@ -189,11 +213,13 @@ body {
     border: none;
     border-radius: 5px;
 }
+
 .btn-commander:hover {
-    background-color: var(--color-btn-hover)!important;
+    background-color: var(--color-btn-hover) !important;
 }
+
 .et_pb_button_0 {
-    padding: 100px!important;
+    padding: 100px !important;
 }
 
 .section4-temoignages h2 {
@@ -201,20 +227,24 @@ body {
     font-size: var(--font-size-heading2);
     font-weight: var(--font-weight-heading);
 }
+
 .row-boissons {
     height: 131px;
     padding-top: 30px;
     overflow: hidden;
 }
+
 .colonne-boissons {
-    display:flex;
+    display: flex;
 }
+
 .boisson-bas {
     position: relative;
     top: 40px;
 }
+
 .boisson-moyen {
-    position:relative;
+    position: relative;
     top: 20px
 }
 
@@ -223,21 +253,25 @@ body {
 .section-contact1 {
     background-color: var(--bg-primary-color);
 }
+
 .fleur-img {
     width: 145px;
     height: 150px;
 }
+
 .section-contact1 h1 {
     color: var(--color-heading2);
     font-size: var(--font-size-heading);
     font-weight: var(--font-weight-heading);
     text-align: center;
-;
+    ;
 }
+
 .branche-img {
     width: 191px;
     height: 219px;
 }
+
 .section-contact1 p {
     color: var(--color-base);
     font-size: var(--font-size-base);
@@ -247,33 +281,54 @@ body {
 .section-contact2 {
     background-color: var(--bg-secondary-color);
 }
+
 .section-contact2 h2 {
     color: var(--color-base);
     font-size: var(--font-size-heading2);
     font-weight: var(--font-size-heading2);
 }
+
 .section-contact3 {
     background-color: var(--bg-primary-color);
 }
+
 .section-contact3 .houx-img {
     width: 147px;
     height: 134px;
 }
+
 .section-contact3 h2 {
     text-align: center;
     color: var(--color-base);
     font-size: var(--font-size-heading2);
     font-weight: var(--font-weight-heading2);
 }
+
 .et_contact_bottom_container {
-width: 100%;
-display: flex;
-justify-content: center;
-padding-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
 }
+
+.branche-img {
+    position: absolute;
+    top: 312px !important;
+    right: 0 !important;
+    width: 140px !important;
+}
+.houx-img {
+    position: absolute !important;
+    top: 315px !important;
+    left: 315px !important;
+}
+
+/* COMMANDE */
+
 .section-commander {
     background-color: #3B8E46;
 }
+
 .section-commander h1 {
     color: #fff;
     font-size: var(--font-size-heading);
@@ -281,22 +336,151 @@ padding-top: 24px;
     text-transform: uppercase;
     text-align: center;
 }
+
 .section-commander h2 {
     color: #fff;
     font-size: var(--font-size-heading2);
     font-weight: var(--font-weight-heading2);
 }
-/*  FOOTER  *//*  FOOTER  *//*  FOOTER  *//*  FOOTER  */  
 
-/* .section-footer {
+input#your-email {
+    border-radius: 5px;
+}
+
+.double-colonnes {
+    display:flex!important;
+    justify-content: space-around!important;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 780px) and (max-width: 980px) {
+
+    /*  HEADER  */
+
+    .nav-principal {
+        width: 100%;
+        height: 80px;
+        padding-top: 10px !important;
+    }
+
+    .row-nav-btn {
+        display: block;
+    }
+
+    .et_pb_button_module_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px !important;
+    }
+
+    .btn-nav {
+        border-radius: 5px;
+    }
+
+    .btn-nav:hover {
+        background-color: var(--color-btn-hover) !important;
+    }
+
+    /*section1*/
+
+    .row-branches-boisson {
+        width: 600px;
+    }
+    .colonne-branches-boisson {
+        height: 400px;
+    }
+    .branche-gauche {
+        width: 260px !important;
+        top: 50px !important;
+        left: 30px !important;
+    }
+    .boisson-img {
+        width: 300px;
+        top: auto !important;
+        left: auto !important;
+    }
+    .branche-droite {
+        width: 270px !important;
+        top: auto !important;
+        left: 300px !important;
+    }
+
+    /* Nous rencontrer */
+
+    .branche-img {
+        top: 872px !important;
+        right: 0 !important;
+    }
+
+    .houx-img {
+        position: absolute !important;
+        top: 500px !important;
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 779px) {
     
-}
-.row-footer {
-    
-}
-.colonne-footer {
+    .nav-principal {
+        width: 100%;
+        height: 80px;
+        padding-top: 10px !important;
+    }
 
-}
-.module-footer {
+    .row-nav-btn {
+        display: block;
+    }
 
-} */
+    .et_pb_button_module_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px !important;
+    }
+
+    .btn-nav {
+        border-radius: 5px;
+    }
+
+    .btn-nav:hover {
+        background-color: var(--color-btn-hover) !important;
+    }
+
+    /*section1*/
+
+    .row-branches-boisson {
+        width: 400px;
+    }
+    .colonne-branches-boisson {
+        height: 250px;
+    }
+    .branche-gauche {
+        width: 150px !important;
+        top: 50px !important;
+        left: 40px !important;
+    }
+    .boisson-img {
+        width: 180px !important;
+        top: auto !important;
+        left: auto !important;
+    }
+    .branche-droite {
+        width: 150px !important;
+        top: 50px !important;
+        left: 205px !important;
+    }
+
+    .overlay-img {
+        top: -35px;
+        left: 0;    
+        font-size: 38px !important;
+    }
+
+      /* Nous rencontrer */
+
+      .branche-img {
+        top: 872px !important;
+        right: 0 !important;
+    }
+}

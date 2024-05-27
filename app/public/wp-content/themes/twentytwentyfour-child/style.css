@@ -92,7 +92,7 @@ body {
 .branche-gauche {
     width: 350px;
     height: auto;
-    position: relative;
+    position: absolute;
     top: 80px;
     left: 235px;
     z-index: 1;
@@ -100,12 +100,12 @@ body {
 .boisson-img {
     width: 350px;
     height: auto;
-    z-index: 23;
+    z-index: 3;
 }
 .branche-droite {
     width: 350px;
     height: auto;
-    position: relative;
+    position: absolute;
     top: 80px;
     left: -240px;
     z-index: 1;
@@ -250,7 +250,7 @@ body {
 .section-contact2 h2 {
     color: var(--color-base);
     font-size: var(--font-size-heading2);
-    font-weight: var(--font-size-heading2);
+    font-weight: var(--font-weight-heading2);
 }
 .section-contact3 {
     background-color: var(--bg-primary-color);
@@ -266,13 +266,14 @@ body {
     font-weight: var(--font-weight-heading2);
 }
 .et_contact_bottom_container {
-width: 100%;
-display: flex;
-justify-content: center;
-padding-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
 }
 .section-commander {
-    background-color: #3B8E46;
+    /* background-color: #3B8E46; */
+    background-color: #c00b0b;
 }
 .section-commander h1 {
     color: #fff;
@@ -287,20 +288,45 @@ padding-top: 24px;
     font-weight: var(--font-weight-heading2);
 }
 
-/* PAGE PRECOMMANDE *//* PAGE PRECOMMANDE *//* PAGE PRECOMMANDE *//* PAGE PRECOMMANDE */
-
-
-/*  FOOTER  *//*  FOOTER  *//*  FOOTER  *//*  FOOTER  */  
-
-/* .section-footer {
-    
+input#your-email {
+    border-radius: 5px;
 }
-.row-footer {
-    
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    /*  HEADER  */  /*  HEADER  */  /*  HEADER  */  /*  HEADER  */  
+
+.nav-principal {
+    width: 100px;
+    height: 80px;
 }
-.colonne-footer {
+
+.row-nav-btn {
+    display: flex;
+    flex-direction: column; /* pour que le bouton se mette à la suite et non à la ligne */
+}
+
+.btn-nav {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+
+    background-color: var(--color-btn);
+    color: #fff;
+    font-size: var(--font-size-btn);
+    font-weight: 700;
+    width: 236px;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+.btn-nav:hover{
+    background-color: var(--color-btn-hover)!important;
+}
 
 }
-.module-footer {
-
-} */
+@media (max-width: 600px) {
+    body {
+            background-color: red;
+    }
+}       
