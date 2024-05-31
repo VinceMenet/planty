@@ -1,0 +1,1 @@
+2024/05/31 15:36:59 [error] 2228#0: *1251 directory index of "/Users/vincent/Local Sites/planty/app/public/wp-content/themes/Divi-child/" is forbidden, client: 127.0.0.1, server: , request: "GET /wp-content/themes/Divi-child/ HTTP/1.0", host: "planty.local", referrer: "http://planty.local/wp-content/themes/Divi-child/style.css?ver=4.25.1"
